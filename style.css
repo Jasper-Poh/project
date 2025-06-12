@@ -1,0 +1,157 @@
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+.navTop {
+  background-color: gray;
+  color: white;
+}
+
+.limitedOffer {
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+}
+
+.Image{
+  display:block;
+  margin-left: auto ;
+  margin-right: auto;
+  width:50%;
+  border-radius: 8px;
+}
+
+.myform {
+  width: 650px;
+  height: 350px;
+  background-color: darkgray;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+
+.payTitle{
+  font-size: 30px;
+  color: lightgray;
+}
+
+.payInput1,
+.payInput2,
+.payInput3,
+.payInput4 {
+  height: 20px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+.payInput1 { width: 550px; }
+.payInput2 { width: 575px; }
+.payInput3 { width: 525px; }
+.payInput4 { width: 150px; }
+
+.payInput1::placeholder,
+.payInput2::placeholder,
+.payInput3::placeholder,
+.payInput4::placeholder {
+  color: rgb(163, 163, 163);
+}
+
+.submit {
+  position: 1000px;
+  height: 40px;
+  bottom: -30px;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  background-color: #369e62;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.closeForm {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: lightgray;
+  color: black;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}
+
+footer {
+  display: flex;
+}
+
+.footerLeft {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.fMenuTitle {
+  font-size: 16px;
+}
+
+.fList {
+  padding: 0;
+  list-style: none;
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: gray;
+  cursor: pointer;
+}
+
+.footerRight {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fInput {
+  padding: 5px;
+}
+
+.fButton {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+
+.fIcons{
+  display: flex;
+}
+
+.fIcon{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+}

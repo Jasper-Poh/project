@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="nav">
+        <div class="above">
+            <span class="limitedOffer" onclick="location.href='admin.php';" style="cursor: pointer;">Admin</span>
+        </div>
+        <div class="navTop">
+            <img src="./image/LargeLorry.jpg" class="Image">
+            <div class="Button">
+                <h2>Add store...</h2>
+                <div class="Store">
+                    <button class="open-button" onclick="openForm()">+</button>
+                    <div class="form" id="myForm">
+                        <div class="Shop">
+                            <h1 class="payTitle">About the shop...</h1>
+                            <form action="data.php" method="POST" id="storeForm">
+                                <label>Store name</label>
+                                <input type="text" id="shopName" name="shopName" class="payInput1" required>
+                                <label>Address</label>
+                                <input type="text" id="address" name="address" class="payInput2" required>
+                                <label>Phone number</label>
+                                <input type="text" id="phoneNumber" name="phoneNumber" class="payInput3" required>
+                                <label>Date</label>
+                                <input type="text" id="date" name="date" placeholder="dd" maxlength="2" class="payInput4" required>
+                                <label>Month</label>
+                                <input type="text" id="month" name="month" placeholder="mm" maxlength="2" class="payInput4" required>
+                                <label>Year</label>
+                                <input type="text" id="year" name="year" placeholder="yyyy" maxlength="4" class="payInput4" required>
+                                <button type="submit" class="submit">Done!</button>
+                                <button type="button" class="closeForm" onclick="closeForm()">X</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our channel</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="Button">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <div class="fIcons">
+                    <img src="./image/Contact/facebook.png" alt="" class="fIcon">
+                    <img src="./image/Contact/twitter.png" alt="" class="fIcon">
+                    <img src="./image/Contact/instagram.png" alt="" class="fIcon">
+                    <img src="./image/Contact/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Akmal/Aliah. All rights reserved. 2023.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
